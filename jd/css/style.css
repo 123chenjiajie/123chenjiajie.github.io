@@ -84,8 +84,7 @@ body{
     font-size: 18px;
     position: absolute;
     left: 12px;
-    top: 8px;
-    
+    top: 8px; 
 }
 .search .center i.fa-microphone{
     left: auto;
@@ -286,7 +285,7 @@ nav .hot{
     width: 16px;
     height: 16px;
     background-size: cover;
-        display: inline-block;
+    display: inline-block;
     position: relative;
     top: 2px;
     left: 3px;
@@ -881,6 +880,9 @@ nav .hot{
 
 
 /*为你推荐*/
+.wei{
+    margin-bottom: 59px;
+}
 .wei ul::after{
     content: "";
     display: table;
@@ -1007,10 +1009,44 @@ nav .hot{
     text-decoration: none;
 }
 
+/*第三页样式*/
+.me{
+    
+}
+.me .nav{
+    overflow: scroll;
+}
 
-
-
-
+.me .title{
+    width: 500px;
+}
+.me .nav ul::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.me .title li{
+    list-style: none;
+}
+.me .nav li{
+    float:left;
+    width: 70px;
+    padding:  0 10px;
+    text-align: center;
+}
+.me .nav li a{
+    color: #727272;
+    font-size: 14px;
+}
+.me .nav li a.active{
+    color: red;
+}
+.me a:hover,
+.me a.active,
+.me a.focus{
+    text-decoration: none;
+    color: red;
+}
 
 
 

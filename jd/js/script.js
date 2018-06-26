@@ -34,7 +34,9 @@ new Vue({
     pagination: {
       el: '.swiper-pagination',
     },
-  })        
+  })    
+ 
+ 
 setInterval(function(){
     x();
 },4000);
