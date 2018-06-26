@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+      <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="shoppcart">
+    <header>
+       <div class="container">
+          <div class="row">
+              <div class="col-xs-4">
+                  <span><img src="img/shopping/1.jpg" alt=""> 正品保障</span>
+              </div>
+              <div class="col-xs-4">
+        <span><img src="img/shopping/2.jpg" alt=""> 极速发货</span>
+              </div>
+              <div class="col-xs-4">
+                  <span><img src="img/shopping/3.jpg" alt=""> 15天售后无忧</span>
+              </div>
+          </div>
+       </div>
+    </header>
+<!--    header 结束-->
+<!--  main -->
+   <div class="main">
+       <img src="img/shopping/4.png" alt="">
+       <p>购物车快饿憋了T.T</p>
+       <p>主人快给我挑点宝贝吧</p>
+       <a href="">去逛逛</a>
+   </div>
+    
+       
+<!--   底部 -->
+    <nav>
+        <ul>
+            <li>
+            <a href="index.html">
+            <i class="fa fa-home"></i>
+            直营</a>
+            </li>
+            <li>
+            <a href="classify.html"><i class="fa fa-list-ul"></i>分类</a>
+            </li>
+            <li>
+            <a href="shoppcart.html"  class="active"><i class="fa fa-shopping-cart"></i>购物车</a>
+            </li>
+            <li>
+            <a href="my.html"><i class="fa fa-user-o"></i>我的</a>
+            </li>
+        </ul>
+    </nav>
+    
+<!--   select good 精选 好货-->
+    <div class="select" id="select">
+        <div class="container">
+         <div class="title">
+           <h3>精选好货</h3><span>| 天猫国际为您精选</span>
+           </div>
+           <div class="shops">
+               <div class="row">
+                   <div class="col-xs-6 shop"  v-for="select in arrs">
+                      <a href="">
+                       <img :src="select.img" alt="">
+                       <p><img :src="select.img1" alt="">{{select.name1}} </p>
+                       <p>{{select.name2}}</p>
+                       <div>
+                            <span class="money">
+                                {{select.money}}
+                            </span>
+                            <del>
+                                {{select.del}}
+                            </del>
+                        </div>
+                    </a>
+                   </div>
+               </div>
+           </div>
+        </div>
+    </div>
+  
+<!--select good 精选 好货-->
+<script src="js/jquery-1.11.1.min.js"></script>
+    
+    <script src="js/swiper-4.2.6.min.js"></script>
+    <script src="js/timeCountDown.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/vuemy.js"></script>
+<!--    <script src="js/vuemy1.js"></script>-->
+     <script src="js/script.js"></script>
+</body>
+</html>

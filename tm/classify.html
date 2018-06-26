@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分类导航</title>
+<!--<link rel="shortcut icon" type="image/x-icon" href="1.ico" />-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+      <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+
+</head>
+<body class="classify">
+    <header>
+        <h1>
+          <a href="index.html"><i class="fa fa-angle-left"></i></a>
+        全部分类</h1>
+    </header>
+    <div class="main" id="classifymain">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-3">
+                    <nav>
+                        <ul class="nav">
+                            <li class="active s">母婴生活</li>
+                            <li class="s">美妆护肤</li>
+                            <li>进口食品</li>
+                            <li>时尚轻奢</li>
+                            <li>个护清洁</li>
+                            <li>家居生活</li>
+                            <li>数码家电</li>
+                            <li>保健品</li>
+                            <li>家有萌宠</li>
+                            <li>独家品牌</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-xs-9">
+<!--                 第一个分类-->
+                  <div class="text active">
+                   <h3>奶粉辅食</h3>
+                    <div class="row">
+                        <div class="col-xs-4"  v-for="abc in arrs">
+                            <div class="text-center">
+                               <a :href="abc.link">
+                                <img :src="abc.img" alt="">
+                                <p>{{abc.name}}</p>
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <h3>玩具</h3>
+                        <div class="row">
+                        <div class="col-xs-4"  v-for="abc in arrs1">
+                            <div class="text-center">
+                               <a :href="abc.link">
+                                <img :src="abc.img" alt="">
+                                <p>{{abc.name}}</p>
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                        <h3>母婴用品</h3>
+                        <div class="row">
+                        <div class="col-xs-4"  v-for="abc in arrs1s">
+                            <div class="text-center">
+                               <a :href="abc.link">
+                                <img :src="abc.img" alt="">
+                                <p>{{abc.name}}</p>
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+<!--                        结束-->
+                 
+
+                </div>
+                <!--                 第二个分类-->
+                       <div class="text">
+                       
+                   <h3>奶粉</h3>
+                    <div class="row">
+                        <div class="col-xs-4"  v-for="abc in arrs2">
+                            <div class="text-center">
+                               <a :href="abc.link">
+                                <img :src="abc.img" alt="">
+                                <p>{{abc.name}}</p>
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                      
+                   
+<!--                        结束-->
+                
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    <img src="img/classify/1/TB2Md7qpVXXXXcCXXXXXXXXXXXX_!!2549841410.jpg_140x140Q50s50.jpg_.webp" alt="">-->
+    
+    
+    
+      
+      
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/swiper-4.2.6.min.js"></script>
+    <script src="js/timeCountDown.js"></script>
+   
+    <script src="js/vue.js"></script>
+    <script src="js/vuemy1.js"></script>
+     <script src="js/script.js"></script>
+</body>
+</html>

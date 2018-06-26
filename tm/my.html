@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+      <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="my">
+<!--   header-->
+    <header>
+           <div class="header-left">
+               <h1>天猫国际</h1>
+           </div>
+           <div class="header-center">
+            <i class="fa fa-search"></i>
+           <input type="text" placeholder="搜索天猫国际商品">
+           </div>
+           <div class="header-right">
+               <i class="fa fa-shopping-cart"></i>
+               <i class="fa fa-ellipsis-h"></i>
+           </div>
+    </header>
+<!--    header 结束-->
+<!--   banner-->
+
+<div class="banner">
+    <div class="row">
+        <div class="col-xs-9">
+            <div class="row">
+                <div class="col-xs-4">
+                    <img src="img/my/TB1yeWeIFXXXXX5XFXXuAZJYXXX-210-210.png_160x160.jpg" alt="">
+                </div>
+                <div class="col-xs-8">
+                    <h2>注册/登录</h2>
+                    <p>欢迎来到天猫国际</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-3 clearfix s">
+          <div class="guo">国际客服</div>
+         </div>
+</div>
+<div class="row">
+    <div class="col-xs-4">红包</div>
+    <div class="col-xs-4">购物卷</div>
+    <div class="col-xs-4">优惠卷</div>
+</div>
+ </div>
+    
+<!--   banner-->
+    <!--   底部 -->
+    <nav>
+        <ul>
+            <li>
+            <a href="index.html">
+            <i class="fa fa-home"></i>
+            直营</a>
+            </li>
+            <li>
+            <a href="classify.html"><i class="fa fa-list-ul"></i>分类</a>
+            </li>
+            <li>
+            <a href="shoppcart.html"  ><i class="fa fa-shopping-cart"></i>购物车</a>
+            </li>
+            <li>
+            <a href="my.html" class="active"><i class="fa fa-user-o"></i>我的</a>
+            </li>
+        </ul>
+    </nav>
+<!--    底部-->
+    <!--   select good 精选 好货-->
+    <div class="select" id="select">
+        <div class="container">
+         <div class="title">
+           <h3>精选好货</h3><span>| 天猫国际为您精选</span>
+           </div>
+           <div class="shops">
+               <div class="row">
+                   <div class="col-xs-6 shop"  v-for="select in arrs">
+                      <a href="">
+                       <img :src="select.img" alt="">
+                       <p><img :src="select.img1" alt="">{{select.name1}} </p>
+                       <p>{{select.name2}}</p>
+                       <div>
+                            <span class="money">
+                                {{select.money}}
+                            </span>
+                            <del>
+                                {{select.del}}
+                            </del>
+                        </div>
+                    </a>
+                   </div>
+               </div>
+           </div>
+        </div>
+    </div>
+  
+<!--select good 精选 好货-->
+      <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/swiper-4.2.6.min.js"></script>
+    <script src="js/timeCountDown.js"></script>
+    <script src="js/vue.js"></script>
+     <script src="js/vuemy.js"></script>
+<!--       <script src="js/vuemy1.js"></script>-->
+     <script src="js/script.js"></script>
+</body>
+</html>
