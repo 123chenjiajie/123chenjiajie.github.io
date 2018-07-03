@@ -14,6 +14,7 @@
 }
 .tanchu .img1{
     width: 100%;
+
 }
 .tanchu div{
     margin-top: -60px;
@@ -201,6 +202,8 @@
     padding: 20px;
     padding-top: 52px;
     padding-bottom: 0;
+    transition: .5s;
+    
 }
 .index .banner{
     border-radius: 6px;
@@ -208,6 +211,8 @@
 .banner img{
     width: 100%;
 }
+
+
 /*假一赔十*/
 .guanfang{
     background: #fff;

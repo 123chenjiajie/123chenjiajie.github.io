@@ -1,4 +1,5 @@
 
+
 //倒计时
 var zxx = {
     $: function(id){
@@ -77,7 +78,7 @@ var mheaderi = document.querySelectorAll(".my header .header-right i");
       spaceBetween: 30,
       loop: true,
       autoplay: {
-        delay: 2000,
+        delay: 3000,
         disableOnInteraction: false,
       },
       pagination: {
@@ -86,14 +87,37 @@ var mheaderi = document.querySelectorAll(".my header .header-right i");
       },
     });
 
-//分类页数据
+
+//banner背景随轮播图发生改变
+var bannerbg = document.querySelector(".banner-bg");
+if(bannerbg !== null){
+setInterval(function(){
+    if(swiper.activeIndex=="0"){
+        bannerbg.style.background="#fc9f3f"//1
+    }else if(swiper.activeIndex=="1"){
+        bannerbg.style.background="#4168de"//1
+    }else if(swiper.activeIndex=="2"){
+        bannerbg.style.background="#32c2ed"//2
+    }else if(swiper.activeIndex=="3"){
+        bannerbg.style.background="#f3ca52"//3
+    }else if(swiper.activeIndex=="4"){
+        bannerbg.style.background="#fa6c8f"//4
+    }else if(swiper.activeIndex=="5"){
+        bannerbg.style.background="#56a7bc"//5
+    }else if(swiper.activeIndex=="6"){
+        bannerbg.style.background="#fc9f3f"//6
+    }else if(swiper.activeIndex=="7"){
+        bannerbg.style.background="#4168de"//1
+    }
+},500)
+}
+        
 
 
 
 
 
-
-
+//分类页数
 
 //选项卡
 var classifynav = document.querySelectorAll(".classify .main .nav .s");
@@ -119,7 +143,6 @@ for(var i=0;i<classifynav.length;i++){
 
 var tanchu = document.querySelector(".index .tanchu")
 var fangwen = document.querySelector(".index .tanchu .fangwen");
-    
     
     if(tanchu !=null){
      setTimeout(function(){
